@@ -1,0 +1,894 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Dalrion",
+				"abbreviation": "Dal",
+				"full": "Dalrion",
+				"url": "https://github.com/PergaminhosDeDalrion/Dalrion.git",
+				"authors": [
+					"Tiago Frossard"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"spell": [],
+	"spellFluff": [],
+	"monster": [
+		{
+			"name": "Sea Goat",
+			"source": "Dalrion",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 6",
+				"average": 22
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 14,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"passive": 13,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the goat moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 ({@damage 2d4}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it {@condition prone}."
+					]
+				},
+				{
+					"name": "Amphibious.",
+					"entries": [
+						"The sea goat can breathe air and water."
+					]
+				},
+				{
+					"name": "Keen Smell.",
+					"entries": [
+						"The sea goat has advantage on Wisdom (Perception) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d6 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-goat.mp3"
+			},
+			"traitTags": [
+				"Charge",
+				"Keen Senses"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"uniqueId": "addc0720-cf45-4fd5-a82c-efdf54bd0677",
+			"skill": {
+				"perception": "+3",
+				"athletics": "+5"
+			},
+			"resist": [
+				{
+					"special": "Hídrico"
+				}
+			]
+		},
+		{
+			"name": "Rainha Espinhosa",
+			"source": "Dalrion",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 50
+			},
+			"str": 17,
+			"dex": 18,
+			"con": 17,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Tail Spike Regrowth",
+					"entries": [
+						"The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail Spike",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 100/200 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/manticore.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Manticore.png",
+			"fluff": {
+				"name": "Manticore",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.",
+									{
+										"name": "Evil Predators",
+										"type": "entries",
+										"entries": [
+											"Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.",
+											"A manticore isn't particularly bright, but it possesses a malevolent nature and the ability to converse. In the course of attacking, it denigrates its foes and offers to kill them swiftly if they beg for their lives. If a manticore sees an advantage to be gained by sparing a creature's life, it does so, asking for a tribute or sacrifice equal to its loss of food."
+										]
+									},
+									{
+										"name": "Monstrous Relationships",
+										"type": "entries",
+										"entries": [
+											"Manticores serve wicked masters that treat them well and provide regular prey. A manticore might provide aerial support for an orc horde or a hobgoblin army. Another could serve as a hunting companion for a hill giant chief, or guard the entrance to a lamia's lair.",
+											"The manticores' greatest territorial rivals include chimeras, griffons, perytons, and wyverns. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Manticore.jpg"
+						}
+					}
+				]
+			},
+			"uniqueId": "ebe278e2-d216-4090-8199-24730d2f9ecc",
+			"shortName": true,
+			"legendaryActions": 3,
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Spike Throw",
+					"entries": [
+						"Rainha Espinhosa pode usar Tail Spike"
+					]
+				}
+			],
+			"save": {
+				"dex": "+8",
+				"con": "+7",
+				"str": "+7"
+			}
+		},
+		{
+			"name": "Sentinela Saguaro",
+			"source": "Dalrion",
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 8,
+			"con": 21,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 13,
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Druidic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Aparência Falsa",
+					"entries": [
+						"Enquanto o sentinela saguaro estiver imóvel, ele é indistinguível de um Saguaro Gigante normal."
+					]
+				},
+				{
+					"name": "Monstro de Cerco",
+					"entries": [
+						"O sentinela saguaro causa dano dobrado a objetos e estruturas."
+					]
+				},
+				{
+					"name": "Corpo Espinhoso",
+					"entries": [
+						"Uma criatura que tocar o sentinela saguaro ou acertá-lo com um ataque corpo-a-corpo enquanto a 5 pés de distância da criatura recebe 5 ({@dice 1d10}) pontos de dano."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"O sentinela saguaro faz 4 ataques com seus socos espinhosos ou abraços perfurantes em qualquer combinação. O sentinela não pode realizar um soco espinhoso com um braço que agarra uma criatura."
+					]
+				},
+				{
+					"name": "Soco Espinhoso",
+					"entries": [
+						"{@atk mw} {@hit 10} para acertar, alcance 5 ft., um alvo. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Abraço Perfurante",
+					"entries": [
+						"{@atk mw} {@hit 10} para acertar, alcance 5 ft., um alvo. {@h}16 ({@damage 2d6 + 6}) dano perfurante. Se o alvo for uma criatura de tamanho Médio ou menor, ela está agarrada (escape CD 16). O sentinela saguaro tem 4 braços, cada um consegue agarrar somente um alvo. Uma vez agarrado, o sentinela saguaro não consegue utilizar esse braço para realizar um soco espinhoso. O sentinela saguaro tem vantagem para atacar uma criatura agarrada pelo abraço perfurante."
+					]
+				},
+				{
+					"name": "Jato dágua (Recarrega 5-6)",
+					"entries": [
+						"O sentinela saguaro cospe violentamente um jato de água em uma linha de 40 ft de distância e 5ft. de largura. Cada criatura nessa linha deve fazer uma salvaguarda de Destreza CD 16, recebendo 22 ({@damage 4d10}) pontos de dano hídrico em uma falha e metade em um sucesso. As criaturas que falharem serão empurradas 10 ft e estarão {@condition prone}"
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance",
+				"Siege Monster"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"E",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Treant",
+				"source": "MM"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Treants are awakened trees that dwell in ancient forests. Although treants prefer to while away the days, months, and years in quiet contemplation, they fiercely protect their woodland demesnes from outside threats.",
+									{
+										"name": "The Sleeping Tree Awakens",
+										"type": "entries",
+										"entries": [
+											"A tree destined to become a treant meditates through a long cycle of seasons, living normally for decades or centuries before realizing its potential. Trees that awaken do so only under special circumstances and in places steeped with nature's magic. Treants and powerful druids can sense when a tree has the spark of potential, and they protect such trees in secret groves as they draw near the moment of their awakening. During the long process of awakening, a tree acquires face-like features in its bark, a division of the lower trunk into legs, and long branches bending downward to serve as its arms. When it is ready, the tree pulls its legs free from the clutching earth and joins its fellows in protecting its woodland home."
+										]
+									},
+									{
+										"name": "Legendary Guardians",
+										"type": "entries",
+										"entries": [
+											"After a treant awakens, it continues to grow exactly as it did when it was a tree. Treants created from the mightiest trees can reach great sizes while developing an innate magical power over plants and animals. Such treants can animate plants, using them to ensnare and trap intruders. They can call wild creatures to aid them or carry messages across great distances."
+										]
+									},
+									{
+										"name": "Protectors of the Wild",
+										"type": "entries",
+										"entries": [
+											"Even after awakening, a treant spends much of its time living as a tree. While rooted in place, a treant remains aware of its surroundings, and can perceive the effects of events taking place miles away based on subtle changes nearby.",
+											"Woodcutters who avoid culling healthy living trees and hunters who take only what they need of the forest's bounty are unlikely to arouse a treant's ire. Creatures careless with fire, those who poison the forest, and those who destroy great trees, especially a tree close to awakening, face the treant's wrath."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"uniqueId": "a28ab617-cff1-42b1-a7cc-25a3282f1ca8",
+			"shortName": true,
+			"skill": {
+				"nature": "+5"
+			},
+			"save": {
+				"str": "+10"
+			},
+			"environment": [
+				"desert"
+			],
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Verme das Areias",
+			"source": "Dalrion",
+			"page": 255,
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 247,
+				"formula": "15d20 + 90"
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 22,
+			"int": 1,
+			"wis": 8,
+			"cha": 4,
+			"save": {
+				"con": "+11"
+			},
+			"senses": [
+				"blindsight 20 ft.",
+				"tremorsense 120 ft."
+			],
+			"passive": 9,
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Nadador das Areias",
+					"entries": [
+						"O verme das areias consegue se mover pelas areias do deserto sem gerar grandes perturbações na superfície. Testes para encontrar um verme das areias são feitos com desvantagem."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"O verme faz um com sua mordida e um com a onda de areia."
+					]
+				},
+				{
+					"name": "Mordida",
+					"entries": [
+						"{@atk mw} {@hit 14} para acertar, alcance 10 ft., um alvo. {@h}22 ({@damage 3d8 + 9}) pontos de dano perfurante. Se o alvo for uma criatura Grande ou menor, ele deve passar em um save de Destreza {@dc 19} ou será engolido pelo verme. Uma criatura engolida está {@condition blinded} e {@condition restrained}, tem {@quickref Cover||3||cobertura total} contra ataques e outros efeitos fora do verme e recebe 21 ({@damage 6d6}) pontos de dano ácido no início de cada um dos turnos do verme.",
+						"Se o verme receber 30 pontos de dano ou mais de uma criatura dentro dele em um único turno, o verme deve passar em uma salvaguarda de Constituição {@dc 21} no fim daquele turno ou regurgitaá todas as criaturas engolidas, que caem  {@condition prone} em um espaço a 10ft do verme. Se o verme morre, uma criatura engolida não estará mais {@condition restrained} por ele e pode escapar do corpo gastando 20 ft. de movimento, saindo {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail Stinger",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one creature. {@h}19 ({@damage 3d6 + 9}) piercing damage, and the target must make a {@dc 19} Constitution saving throw, taking 42 ({@damage 12d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/purple-worm.mp3"
+			},
+			"traitTags": [
+				"Tunneler"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Purple Worm",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Purple Worm",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The massive burrowing monster known as the purple worm terrorizes the creatures of the Underdark as it chews through solid rock in pursuit of prey. A dimwitted, ravenous force of nature, this creature regards anything it encounters as food.",
+									{
+										"name": "Ravenous Hunters",
+										"type": "entries",
+										"entries": [
+											"Loud noise attracts purple worms, which have been known to interrupt underground battles and tear through subterranean cities seeking prey. The underground civilizations of the drow, the duergar, and the mind flayers maintain special wards around their settlements to deter these monsters.",
+											"Though most common in the Underdark, purple worms are frequently seen on the surface world in rocky and mountainous lands. The maw of a purple worm is large enough to swallow a horse whole, and no creature is safe from its hunger. It lunges forward by rhythmically compressing and expanding its body, catching other Underdark dwellers by surprise with the speed of its advance."
+										]
+									},
+									{
+										"name": "Boons of the Worm",
+										"type": "entries",
+										"entries": [
+											"When a purple worm burrows through the ground, it consumes earth and rock, which it breaks down and constantly excretes. Precious metals and gems can thus be found within the bodies of purple worms, which are targeted by particularly brave and foolhardy treasure hunters.",
+											"A burrowing purple worm constantly creates new tunnels throughout the Underdark, which are quickly made use of by other creatures as corridors and highways. Because a purple worm rarely returns to its own tunnels, such passageways are a good place to avoid these monsters. Areas rich in prey quickly become interlaced with complex tunnel systems resulting from several worms hunting together."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Purple Worm.webp"
+						}
+					}
+				]
+			},
+			"uniqueId": "488967af-127a-4e5f-9ddf-8fb763d48da5",
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Pavão Daakiri",
+			"source": "Dalrion",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 + 2",
+				"average": 9
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 13,
+			"int": 2,
+			"wis": 9,
+			"cha": 6,
+			"skill": {
+				"survival": "+3"
+			},
+			"passive": 9,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Visão e Olfato Aguçados",
+					"entries": [
+						"O pavão daakiri tem vantagem em testes de Sabedoria({@skill Perception}) que dependam de visão ou de olfato."
+					]
+				},
+				{
+					"name": "Táticas de Matilha",
+					"entries": [
+						"O pavão tem vantagem em uma jogada de ataque contra uma criatura se ao menos um dos aliados do pavão estiverem a até 5 pés de distância da criatura alvo e se o aliado não estiver  {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Cactícola",
+					"entries": [
+						"O pavão daakiri é imune ao efeito de {@hazard razorvine } de uma floresta de cactos."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bicada",
+					"entries": [
+						"{@atk mw} {@hit 3} para acertar, alcance 5 ft., one target. {@h}6 ({@damage 2d4 + 1}) piercing damage"
+					]
+				},
+				{
+					"name": "Cauda Espinhosa  {@recharge}",
+					"entries": [
+						"O pavão sacode sua cauda, lançando uma saraivada de agulhas em um cone de 15 pés. Cada criatura na área deve fazer uma salvaguarda de Destreza {@dc 11}, recebendo 7 ({@damage 2d6}) pontos de dano lígneo em caso de falha ou metade disso em caso de sucesso."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "5d2cf494-4890-48cf-82df-81c7831d637f",
+			"environment": [
+				"desert"
+			],
+			"token": {
+				"name": "Pavão Daakiri",
+				"source": ""
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Kobold Rathsythirani",
+			"source": "Dalrion",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d6",
+				"average": 7
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 10,
+			"int": 8,
+			"wis": 8,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Sensitividade à Luz Solar",
+					"entries": [
+						"Enquanto em luz solar, o kobold tem desvantagem em rolagens de ataque, bem como em Testes de Sabedoria ({@skill Perception}) que dependam da visão."
+					]
+				},
+				{
+					"name": "Táticas de Matilha",
+					"entries": [
+						"O kobold tem vantagem em uma jogada de ataque contra uma criatura se ao menos um dos aliados do pavão estiverem a até 5 pés de distância da criatura alvo e se o aliado não estiver  {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Resistência Rathsythirani",
+					"entries": [
+						"O kobold tem resistência a dano lígneo."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Maça-Estrela",
+					"entries": [
+						"{@atk mw} {@hit 4} para acertar, alcance 5 ft., um alvo. {@h}6 ({@damage 1d8 + 2}) pontos de dano perfurante."
+					]
+				},
+				{
+					"name": "Saraivada de Espinhos",
+					"entries": [
+						"{@atk rw} {@hit 4} para acertar, alcance 30/120 ft., um alvo. {@h}4 ({@damage 1d4 + 2}) pontos de dano lígneo."
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kobold.mp3"
+			},
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Kobold",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Kobold",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kobolds are craven reptilian humanoids that worship evil dragons as demigods and serve them as minions and toadies. Kobolds inhabit dragons' lairs when they can but more commonly infest dungeons, gathering treasures and trinkets to add to their own tiny hoards.",
+									{
+										"name": "Strength in Numbers",
+										"entries": [
+											"Kobolds are egg-laying creatures. They mature quickly and can live to be \"great wyrms\" more than a century old. However, many kobolds perish before they reach the end of their first decade. Physically weak, they are easy prey for predators. This vulnerability forces them to band together. Their superior numbers can win battles against powerful adversaries, but often with massive casualties on the kobold side."
+										],
+										"type": "entries"
+									},
+									{
+										"name": "Tunnelers and Builders",
+										"type": "entries",
+										"entries": [
+											"Kobolds make up for their physical ineptitude with a cleverness for trap making and tunneling. Their lairs consist of low tunnels through which they move easily but which hinder larger humanoids. Kobolds also riddle their lairs with traps. The most insidious kobold traps make use of natural hazards and other creatures. A trip wire might connect to a spring-loaded trap that hurls clay pots of flesh-eating green slime or flings crates of venomous giant centipedes at intruders."
+										]
+									},
+									{
+										"name": "The Lost God",
+										"type": "entries",
+										"entries": [
+											"In addition to the dragons they revere, kobolds worship a lesser god named Kurtulmak. Legends speak of how Kurtulmak served as Tiamat's vassal in the Nine Hells until Garl Glittergold, the god of gnomes, stole a trinket from the Dragon Queen's hoard. Tiamat sent Kurtulmak to retrieve the trinket, but Garl Glittergold played a trick on him, collapsing the earth and trapping the kobold god in an underground maze for eternity. For this reason, kobolds hate gnomes and pranks of any kind. Kurtulmak's most devoted worshipers dedicate themselves to finding and releasing their lost god from his prison-maze."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kobold.webp"
+						},
+						"credit": "Conceptopolis"
+					}
+				]
+			},
+			"uniqueId": "4881419c-75d3-447d-839d-9a3ba84b5926"
+		}
+	],
+	"legendaryGroup": [],
+	"monsterFluff": [],
+	"background": [],
+	"backgroundFeature": [],
+	"feat": [],
+	"race": [],
+	"raceFeature": [],
+	"raceFluff": [],
+	"subrace": [],
+	"deity": [],
+	"item": [],
+	"baseitem": [],
+	"variant": [],
+	"itemProperty": [],
+	"itemType": [],
+	"itemFluff": [],
+	"itemGroup": [],
+	"itemEntry": [],
+	"psionic": [],
+	"reward": [],
+	"object": [],
+	"trap": [],
+	"hazard": [],
+	"variantrule": [],
+	"condition": [],
+	"disease": [],
+	"status": [],
+	"adventure": [],
+	"adventureData": [],
+	"book": [],
+	"bookData": [],
+	"table": [],
+	"tableGroup": [],
+	"vehicle": [],
+	"vehicleUpgrade": [],
+	"vehicleWeapon": [],
+	"action": [],
+	"cult": [],
+	"boon": [],
+	"language": [],
+	"languageScript": [],
+	"makebrewCreatureTrait": [],
+	"charoption": [],
+	"charoptionFluff": [],
+	"recipe": [],
+	"psionicDisciplineFocus": [],
+	"psionicDisciplineActive": []
+}
