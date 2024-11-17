@@ -2,14 +2,14 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Dalrion",
-				"abbreviation": "Dal",
-				"full": "Dalrion",
-				"url": "https://github.com/PergaminhosDeDalrion/Dalrion.git",
+				"json": "Pergaminhos de Dalrion",
+				"abbreviation": "PdD",
+				"full": "Pergaminhos de Dalrion",
+				"url": "https://github.com/PergaminhosDeDalrion/PdD.git",
 				"authors": [
 					"Tiago Frossard"
 				],
-				"convertedBy": []
+				"convertedBy": [Tiago Frossard]
 			}
 		]
 	},
@@ -18,7 +18,7 @@
 	"monster": [
 		{
 			"name": "Sea Goat",
-			"source": "Dalrion",
+			"source": "Pergaminhos de Dalrion",
 			"basicRules": true,
 			"size": [
 				"L"
@@ -118,174 +118,8 @@
 			]
 		},
 		{
-			"name": "Rainha Espinhosa",
-			"source": "Dalrion",
-			"basicRules": true,
-			"size": [
-				"L"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 68,
-				"formula": "8d10 + 24"
-			},
-			"speed": {
-				"walk": 30,
-				"fly": 50
-			},
-			"str": 17,
-			"dex": 18,
-			"con": 17,
-			"int": 10,
-			"wis": 12,
-			"cha": 8,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 11,
-			"languages": [
-				"Common"
-			],
-			"cr": "10",
-			"trait": [
-				{
-					"name": "Tail Spike Regrowth",
-					"entries": [
-						"The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 3}) piercing damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Tail Spike",
-					"entries": [
-						"{@atk rw} {@hit 8} to hit, range 100/200 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage."
-					]
-				}
-			],
-			"environment": [
-				"coastal",
-				"grassland",
-				"hill",
-				"mountain"
-			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/manticore.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"tokenUrl": "https://5e.tools/img/MM/Manticore.png",
-			"fluff": {
-				"name": "Manticore",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"A monster in every sense of the word, a manticore has a vaguely humanoid head, the body of a lion, and the wings of a dragon. A bristling mane stretches down the creature's back, and its long tail ends in a cluster of deadly spikes that can impale prey at impressive range.",
-									{
-										"name": "Evil Predators",
-										"type": "entries",
-										"entries": [
-											"Manticores are fierce killers that hunt far and wide for prey. They work together to take down particularly large or dangerous creatures, sharing the meal once a kill is made. A manticore begins its attack with a volley of tail spikes, then lands and uses its claws and bite. When outdoors and outnumbered, it uses its wings to stay aloft, attacking from a distance until its spikes are depleted.",
-											"A manticore isn't particularly bright, but it possesses a malevolent nature and the ability to converse. In the course of attacking, it denigrates its foes and offers to kill them swiftly if they beg for their lives. If a manticore sees an advantage to be gained by sparing a creature's life, it does so, asking for a tribute or sacrifice equal to its loss of food."
-										]
-									},
-									{
-										"name": "Monstrous Relationships",
-										"type": "entries",
-										"entries": [
-											"Manticores serve wicked masters that treat them well and provide regular prey. A manticore might provide aerial support for an orc horde or a hobgoblin army. Another could serve as a hunting companion for a hill giant chief, or guard the entrance to a lamia's lair.",
-											"The manticores' greatest territorial rivals include chimeras, griffons, perytons, and wyverns. Manticores hunting as a pack often have the advantage of greater numbers. In addition to these creatures, manticores fear dragons and avoid them."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Manticore.jpg"
-						}
-					}
-				]
-			},
-			"uniqueId": "ebe278e2-d216-4090-8199-24730d2f9ecc",
-			"shortName": true,
-			"legendaryActions": 3,
-			"isNamedCreature": true,
-			"legendary": [
-				{
-					"name": "Spike Throw",
-					"entries": [
-						"Rainha Espinhosa pode usar Tail Spike"
-					]
-				}
-			],
-			"save": {
-				"dex": "+8",
-				"con": "+7",
-				"str": "+7"
-			}
-		},
-		{
 			"name": "Sentinela Saguaro",
-			"source": "Dalrion",
+			"source": "Pergaminhos de Dalrion",
 			"size": [
 				"H"
 			],
@@ -451,7 +285,7 @@
 		},
 		{
 			"name": "Verme das Areias",
-			"source": "Dalrion",
+			"source": "Pergaminhos de Dalrion",
 			"page": 255,
 			"size": [
 				"G"
@@ -602,7 +436,7 @@
 		},
 		{
 			"name": "Pavão Daakiri",
-			"source": "Dalrion",
+			"source": "Pergaminhos de Dalrion",
 			"size": [
 				"S"
 			],
@@ -692,7 +526,7 @@
 		},
 		{
 			"name": "Kobold Rathsythirani",
-			"source": "Dalrion",
+			"source": "Pergaminhos de Dalrion",
 			"size": [
 				"S"
 			],
