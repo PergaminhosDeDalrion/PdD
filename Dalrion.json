@@ -19,7 +19,7 @@
 	"spellFluff": [],
 	"monster": [
 		{
-			"name": "Sea Goat",
+			"name": "Bode Marinho",
 			"source": "Pergaminhos de Dalrion",
 			"basicRules": true,
 			"size": [
@@ -678,7 +678,92 @@
 				]
 			},
 			"uniqueId": "4881419c-75d3-447d-839d-9a3ba84b5926"
+		},
+		{
+	"name": "Rocka",
+	"source": "Pergaminhos de Dalrion",
+	"size": [
+		"L"
+	],
+	"type": "elemental",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 16,
+			"from": [
+				"natural armor"
+			]
 		}
+	],
+	"hp": {
+		"formula": "13d10 + 39",
+		"average": 110
+	},
+	"speed": {
+		"walk": 40,
+		"fly": 10
+	},
+	"str": 20,
+	"dex": 10,
+	"con": 17,
+	"int": 5,
+	"wis": 10,
+	"cha": 6,
+	"skill": {
+		"perception": "+4"
+	},
+	"senses": [
+		"tremorsense 120 ft."
+	],
+	"passive": 14,
+	"cr": "6",
+	"action": [
+		{
+			"name": "Multiataque",
+			"entries": [
+				"A rocka faz dois ataques com sua bicada"
+			]
+		},
+		{
+			"name": "Bicada",
+			"entries": [
+				"{@atk mw} {@hit 8} para acertar, alcance 10 ft., uma criatura. {@h}13 ({@damage 2d8 + 5}) pontos de dano telúrico."
+			]
+		},
+		{
+			"name": "Grito Ultrasônico {@recharge 5}",
+			"entries": [
+				"A rocka lança um grito ultrassônico em um cone de 30 pés. Cada criatura na área deve passar em uma salvaguarda de constituição  {@dc 15}. Em caso de falha, receberá 45 ({@damage 10d8}) pontos de dano eólico e estará {@condition deaf} até o fim de seu próximo turno. Em caso de sucesso receberá metade do dano e não estará  {@condition deaf}."
+			]
+		}
+	],
+	"senseTags": [
+		"T"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"shortName": "rocka",
+	"immune": [
+		{
+			"special": "Telúrico"
+		}
+	],
+	"tokenHref": {
+		"type": "external",
+		"url": ""
+	},
+	"environment": [
+		"desert"
+	]
+}
 	],
 	"legendaryGroup": [],
 	"monsterFluff": [],
