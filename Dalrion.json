@@ -11,7 +11,9 @@
 					"Tiago Frossard"
 				],
 				"color": "e7871d",
-				"convertedBy": ["Tiago Frossard"]
+				"convertedBy": [
+					"Tiago Frossard"
+				]
 			}
 		]
 	},
@@ -680,90 +682,475 @@
 			"uniqueId": "4881419c-75d3-447d-839d-9a3ba84b5926"
 		},
 		{
-	"name": "Rocka",
-	"source": "Pergaminhos de Dalrion",
-	"size": [
-		"L"
-	],
-	"type": "elemental",
-	"alignment": [
-		"U"
-	],
-	"ac": [
-		{
-			"ac": 16,
-			"from": [
-				"natural armor"
-			]
-		}
-	],
-	"hp": {
-		"formula": "13d10 + 39",
-		"average": 110
-	},
-	"speed": {
-		"walk": 40,
-		"fly": 10
-	},
-	"str": 20,
-	"dex": 10,
-	"con": 17,
-	"int": 5,
-	"wis": 10,
-	"cha": 6,
-	"skill": {
-		"perception": "+4"
-	},
-	"senses": [
-		"tremorsense 120 ft."
-	],
-	"passive": 14,
-	"cr": "6",
-	"action": [
-		{
-			"name": "Multiataque",
-			"entries": [
-				"A rocka faz dois ataques com sua bicada"
-			]
+			"name": "Rocka",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 39",
+				"average": 110
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 10
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 17,
+			"int": 5,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"tremorsense 120 ft."
+			],
+			"passive": 14,
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"A rocka faz dois ataques com sua bicada"
+					]
+				},
+				{
+					"name": "Bicada",
+					"entries": [
+						"{@atk mw} {@hit 8} para acertar, alcance 10 ft., uma criatura. {@h}13 ({@damage 2d8 + 5}) pontos de dano telúrico."
+					]
+				},
+				{
+					"name": "Grito Ultrasônico {@recharge 5}",
+					"entries": [
+						"A rocka lança um grito ultrassônico em um cone de 30 pés. Cada criatura na área deve passar em uma salvaguarda de constituição  {@dc 15}. Em caso de falha, receberá 45 ({@damage 10d8}) pontos de dano eólico e estará {@condition deaf} até o fim de seu próximo turno. Em caso de sucesso receberá metade do dano e não estará  {@condition deaf}."
+					]
+				}
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"shortName": "rocka",
+			"immune": [
+				{
+					"special": "Telúrico"
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"environment": [
+				"desert"
+			],
+			"uniqueId": "8eddca74-d613-419c-83bb-1c43e72b50d2"
 		},
 		{
-			"name": "Bicada",
-			"entries": [
-				"{@atk mw} {@hit 8} para acertar, alcance 10 ft., uma criatura. {@h}13 ({@damage 2d8 + 5}) pontos de dano telúrico."
-			]
+			"name": "Anomalia das Areias",
+			"source": "Pergaminhos de Dalrion",
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Deslizamento pela Terra",
+					"entries": [
+						"A anomalia pode mergulhar através de terra, areia ou pedra não mágica e não trabalhada. Enquanto mergulha, a anomalia não altera o material através do qual está passando."
+					]
+				},
+				{
+					"name": "Preso à Terra",
+					"entries": [
+						"A anomalia morre se for forçada a sair do corpo de terra, areia ou pedra que habita."
+					]
+				}
+			],
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "9d10 + 18",
+				"average": 67
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 60
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 15,
+			"int": 11,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				{
+					"special": "Telúrico"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"prone",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Comprimir",
+					"entries": [
+						"{@atk mw} {@hit 5} para acertar, alcance 10 ft., uma criatura. {@h}17 ({@damage 4d6 + 3}) dano concussivo. Se o alvo for de tamanho Médio ou menor, estará {@condition grappled} ({@dc 13} para escapar) e será puxado 5 pés na direção da anomalia das areias. Até que o agarrão termine, o alvo estará {@condition restrained}, a anomalia tentará afogá-lo e a anomalia não conseguirá comprimir outro alvo."
+					]
+				}
+			],
+			"senseTags": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "cc764190-0f70-498f-afd5-203a9eb9b1c7",
+			"shortName": true,
+			"languages": [
+				"entende terran mas não fala"
+			],
+			"environment": [
+				"desert"
+			],
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			}
 		},
 		{
-			"name": "Grito Ultrasônico {@recharge 5}",
-			"entries": [
-				"A rocka lança um grito ultrassônico em um cone de 30 pés. Cada criatura na área deve passar em uma salvaguarda de constituição  {@dc 15}. Em caso de falha, receberá 45 ({@damage 10d8}) pontos de dano eólico e estará {@condition deaf} até o fim de seu próximo turno. Em caso de sucesso receberá metade do dano e não estará  {@condition deaf}."
+			"name": "Polvo Rochoso Gigante",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 15,
+			"int": 4,
+			"wis": 10,
+			"cha": 4,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Camuflagem",
+					"entries": [
+						"O polvo tem vantagem em testes de Destreza ({@skill Stealth})."
+					]
+				},
+				{
+					"name": "Respirar na Areia",
+					"entries": [
+						"O polvo tem a capacidade de respirar mesmo imerso em areia."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tentacles",
+					"entries": [
+						"{@atk mw} {@hit 6} para acertar, alcance 15 ft., um alvo. {@h}11 ({@damage 2d6 + 4}) pontos de dano concussivo. Se o alvo for uma criatura, ela estará {@condition grappled} ({@dc 16} para escapar). Até que esse agarrão termine, o alvo estará  {@condition restrained} e o polvo não poderá usar seus tentáculos em outro alvol."
+					]
+				},
+				{
+					"name": "Disparar areia (Recarregar 6)",
+					"entries": [
+						"O polvo usa sua ação Nuvem de Areia ou sua ação Jato de Areia."
+					]
+				},
+				{
+					"name": "Nuvem de Areia",
+					"entries": [
+						"Um raio de 20 ft. de areia estende-se no entorno do polvo. A área estará pesadamente obscurecida por  1 minuto, embora um vento significante possa dispersar a nuvem. Após lançar a nuvem, o polvo pode usar a ação Dash como uma ação bônus."
+					]
+				},
+				{
+					"name": "Jato de Areia",
+					"entries": [
+						"O polvo lança um jato de areia em um alvo a até 30ft de distância. O alvo deve passar em uma salvaguarda de Destreza ({@dc 16} para escapar) ou receberá {@damage 2d6} pontos de dano telúrico."
+					]
+				}
+			],
+			"traitTags": [
+				"Camouflage",
+				"Hold Breath",
+				"Water Breathing"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Giant Octopus",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Giant Octopus.webp"
+						}
+					}
+				]
+			},
+			"uniqueId": "cd6e4b92-6ea4-4e12-a6fc-f4eeae93b42c",
+			"environment": [
+				"desert"
+			],
+			"token": {
+				"name": "",
+				"source": ""
+			}
+		},
+		{
+			"name": "Efrenuk",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d6"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 13,
+			"con": 10,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Sentido hídrico",
+					"entries": [
+						"O efrenuk tem vantagem em testes de Sabedoria({@skill Perception}) para encontrar água."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bicada",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) pontos de dano cortante."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluffImages": true,
+			"uniqueId": "5c11cd8a-6e48-4539-abcc-afdecacbd871",
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			}
+		},
+		{
+			"name": "Crocodilo da Lama",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d12 + 36",
+				"average": 94
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 19,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"stealth": "+6"
+			},
+			"passive": 10,
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Segurar o fôlego",
+					"entries": [
+						"O crocodilo pode segurar seu fôlego por 30 minutos."
+					]
+				},
+				{
+					"name": "Camuflagem da Lama",
+					"entries": [
+						"O crocodilo tem vantagem em testes de Destreza ({@skill Stealth}) para se camuflar na lama"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"O crocodilo faz dois ataques: um com sua mordida e outro com sua cauda."
+					]
+				},
+				{
+					"name": "Mordida",
+					"entries": [
+						"{@atk mw} {@hit 9} para acertar, alcance 5 ft., um alvo. {@h}22 ({@damage 3d10 + 6}) pontos de dano perfurante, e o alvo está {@condition grappled} ({@dc 16} para escapar). Até que esse {@condition grappled} termine, o alvo está  {@condition restrained}, o crocodilo usa automaticamente seu giro da morte e o crocodilo não pode morder outro alvo."
+					]
+				},
+				{
+					"name": "Cauda",
+					"entries": [
+						"{@atk mw} {@hit 9} para acertar, alcance 10 ft., um alvo não {@condition grappled} pelo crocodilo. {@h}15 ({@damage 2d8 + 6}) pontos de dano concussivo. Se o alvo for uma criatura, ela deve passar em uma salvaguarda de Força {@dc 16} ou será derrubada {@condition prone}."
+					]
+				},
+				{
+					"name": "Giro da Morte",
+					"entries": [
+						"O crocodilo gira violentamente, causando {@h}22 ({@damage 3d10 + 6}) pontos de dano perfurante a um alvo {@condition grappled} pelo crocodilo."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-crocodile.mp3"
+			},
+			"traitTags": [
+				"Hold Breath"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"token": {
+				"name": "Giant Crocodile",
+				"source": "MM"
+			},
+			"uniqueId": "d6afcdfc-850a-4b04-9200-12c2e87af626",
+			"resist": [
+				{
+					"special": "Telúrico, Hídrico"
+				}
 			]
 		}
-	],
-	"senseTags": [
-		"T"
-	],
-	"actionTags": [
-		"Multiattack"
-	],
-	"miscTags": [
-		"MW"
-	],
-	"hasFluff": true,
-	"hasFluffImages": true,
-	"shortName": "rocka",
-	"immune": [
-		{
-			"special": "Telúrico"
-		}
-	],
-	"tokenHref": {
-		"type": "external",
-		"url": ""
-	},
-	"environment": [
-		"desert"
-	]
-}
 	],
 	"legendaryGroup": [],
 	"monsterFluff": [],
