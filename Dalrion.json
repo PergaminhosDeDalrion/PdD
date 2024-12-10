@@ -1150,6 +1150,1054 @@
 					"special": "Telúrico, Hídrico"
 				}
 			]
+		},
+		{
+			"name": "Nautilóide Damashiiri",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 16,
+			"int": 4,
+			"wis": 10,
+			"cha": 4,
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Anfíbio",
+					"entries": [
+						"O nautilóide damashiiri pode respirar na areia, na água e no ar."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tentáculos",
+					"entries": [
+						"{@atk mw} {@hit 5} para acertar, alcance 15 ft., um alvo. {@h}10 ({@damage 2d6 + 3}) pontos de dano concussivo. Se o alvo for uma criatura, ele estará {@condition grappled} ({@dc 16} para escapar). Até que esse agarrão termine, o alvo está {@condition restrained}, e o nautilóide não pode usar seus tentáculos em outro alvo."
+					]
+				},
+				{
+					"name": "Defesa na Concha",
+					"entries": [
+						"O nautilóide entra em sua concha. Até que emerja, ele ganha um bônus de +4 para sua CA e tem vantagem em salvaguardas de Força e Constituição. Enquanto estiver em sua concha, o nautilóide está {@condition prone}, sua velocidade é 0 e não pode aumentá-la, ele tem desvantagem em salvaguardas de Destreza, não pode usar reações e a única ação que pode fazer é usar uma ação bônus para sair da concha."
+					]
+				}
+			],
+			"traitTags": [
+				"Camouflage",
+				"Hold Breath",
+				"Water Breathing"
+			],
+			"actionTags": [
+				"Tentacles"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluffImages": true,
+			"uniqueId": "99f61434-8bae-4b06-91bd-e8f46f8e850d",
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"T"
+			],
+			"resist": [
+				{
+					"special": "Telúrico"
+				}
+			],
+			"environment": [
+				"desert",
+				"swamp"
+			],
+			"token": {
+				"name": "",
+				"source": ""
+			}
+		},
+		{
+			"name": "Para-elemental da Lama",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d10 + 48"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 60,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques não-mágicos"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"Aquan",
+				"Terran"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Forma hídrica",
+					"entries": [
+						"O para-elemental pode entrar no espaço de uma criatura e parar ali. Ele pode se mover atravez de um espaço tão apertado quanto 2,5cm sem se apertar."
+					]
+				},
+				{
+					"name": "Congelar",
+					"entries": [
+						"Se o elemental receber dano gélido, ele congela parcialmente: sua velocidade é reduzida em 20ft. até o fim de seu próximo ano."
+					]
+				},
+				{
+					"name": "Atravessar a Terra",
+					"entries": [
+						"O elemental pode atravessar terra, pedra e lama não-trabalhada, não mágica. Enquanto faz isso, o para-elemental não perturba o material pelo qual se move."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"O para-elemental faz dois ataques de chicote"
+					]
+				},
+				{
+					"name": "Chicotada de Lama",
+					"entries": [
+						"{@atk mw} {@hit 7} para acertar, alcance 10 ft., um alvo. {@h}7 ({@damage 1d8 + 2}) pontos de dano hídrico e 7 ({@damage 1d8 + 2}) pontos de dano telúrico."
+					]
+				},
+				{
+					"name": "Comprimir {@recharge 4}",
+					"entries": [
+						"Cada criatura no espaço do elemental deve fazer uma salvaguarda de força {@dc 15}. Em caso de falha, o alvo recebe 7 ({@damage 1d8 + 2}) pontos de dano hídrico e {@h}7 ({@damage 1d8 + 2}) pontos de dano telúrico. Se for Grande ou menor, também estará {@condition grappled} ({@dc 14} para escapar). Até que esse agarrão termine, o alvo está  {@condition restrained} e incapaz de respirar, a não ser que possa respirar na lama. Se a salvaguarda for bem sucedida, o alvo é empurrado para fora do espaço do para-elemental.",
+						"O para-elemental pode agarrar uma criatura Grande ou até 2 criaturas Médias ou menores ao mesmo tempo. No início de cada um dos turnos do para-elemental, cada alvo  {@condition grappled} por ele recebe {@h}7 ({@damage 1d8 + 2}) pontos de dano hídrico e {@h}7 ({@damage 1d8 + 2}) pontos de dano telúrico.Uma criatura dentro de 5ft. do para-elemental pode puxar uma criatura ou objeto de dentro dele usando uma ação para fazer um teste de Força ({@dc 14}) e passando."
+					]
+				}
+			],
+			"environment": [
+				"swamp"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ",
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"uniqueId": "ee74ccf8-0fdd-421e-a96e-4fa73eeee8b2",
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			}
+		},
+		{
+			"name": "Earth Elemental",
+			"source": "Pergaminhos de Dalrion",
+			"page": 124,
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "12d10 + 60"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 20,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"Terran"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Earth Glide",
+					"entries": [
+						"The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The elemental deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The elemental makes two slam attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/earth-elemental.mp3"
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Earth Elemental",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Earth Elemental",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"An earth elemental plods forward like a walking hill, club-like arms of jagged stone swinging at its sides. Its head and body consist of dirt and stone, occasionally set with chunks of metal, gems, and bright minerals.",
+									"Earth elementals glide through rock and earth as though they were liquid. Earthbound creatures have much to fear from an earth elemental, since the elemental can pinpoint the precise location of any foe that stands on solid ground in its vicinity."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Elementals",
+						"entries": [
+							"Elementals are incarnations of the elements that make up the universe: air, earth, fire, and water. Though little more than animated energy on their own planes of existence, they can be called on by spellcasters and powerful beings to take shape and perform tasks.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Living Elements",
+												"entries": [
+													"On its home plane, an elemental is a bodiless life force. Its dim consciousness manifests as a physical shape only when focused by the power of magic. A wild spirit of elemental force has no desire except to course through the element of its native plane. Like beasts of the Material Plane, these elemental spirits have no society or culture, and little sense of being."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Conjured by Magic",
+												"entries": [
+													"Certain spells and magic items can conjure an elemental, summoning it from the Inner Planes to the Material Plane. Elementals instinctively resent being pulled from their native planes and bound into service. A creature that summons an elemental must assert force of will to control it."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Bound and Shaped",
+												"entries": [
+													"Powerful magic can bind an elemental spirit into a material template that defines a specific use and function. Invisible stalkers are air elementals bound to a specific form, in the same way that water elementals can be shaped into water weirds."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Elemental Nature",
+												"entries": [
+													"An elemental doesn't require air, food, drink, or sleep."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Earth Elemental.webp"
+						}
+					}
+				]
+			},
+			"uniqueId": "c2276623-3b9f-4f89-86d9-46e8c89a6f61"
+		},
+		{
+			"name": "Mirmidão Para-elemental da Lama",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 68",
+				"average": 144
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 7,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques não-mágicos"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"Terran",
+				"Aquan. Se criado",
+				"um idioma à escolha de seu criador"
+			],
+			"cr": "7",
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"O mirmidão faz quatro ataques com sua lança."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 7} para acertar, alcance 5 ft (arremessado 20/60ft), um alvo. {@h}9 ({@damage 1d8 + 4}) pontos de dano etérico."
+					]
+				},
+				{
+					"name": "Ataque de Lama {@recharge}",
+					"entries": [
+						"O mirmidão faz um ataque com sua lança. Em um acerto, o alvo recebe 22 ({@damage 4d10}) pontos de dano telúrico extra e deve passar em uma salvaguarda de Força {@dc 14} ou será derrubado {@condition prone}."
+					]
+				}
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"T",
+				"AQ"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"uniqueId": "91942295-155d-4a41-bd36-1628c5d74a46",
+			"attachedItems": [
+				"spear|phb"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			}
+		},
+		{
+			"name": "Para-elemental da Areia",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"L"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "12d10 + 36",
+				"average": 102
+			},
+			"speed": {
+				"walk": 90
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				{
+					"special": "Telúrico, Eólico"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"Auran",
+				"Terran"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Forma de Areia",
+					"entries": [
+						"O elemental pode entrar no espaço de uma criatura hostil e parar lá. Ele pode se mover através de um espaço tão apertado quanto 1 polegada sem se espremer."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"O elemental faz dois ataques com jatos de areia"
+					]
+				},
+				{
+					"name": "Jato de Areia",
+					"entries": [
+						"{@atk mw} {@hit 7} para acertar, alcance 10 ft., um alvo. {@h}14 ({@damage 2d8 + 4}) pontos de dano telúrico."
+					]
+				},
+				{
+					"name": "Turbilhão Abrasivo {@recharge 4}",
+					"entries": [
+						"Cada criatura no espaço do elemental deve fazer uma salvaguarda de constituição CD {@dc 13}.Em uma falha, um alvo recebe 15 ({@damage 3d8 + 2}) pontos de dano telúrico, é lançado 20 ft. para longe do elemental em uma direção aleatória, será derrubado {@condition prone} e estará {@condition blind}. Se um alvo arremessado acertar um objeto tal qual uma parede ou chão, o alvo recebe 3 ({@damage 1d6}) pontos de dano concussivo para cara 10 ft que foi arremessado. Se o alvo for arremessado em outra criatura, essa criatura deve passar em uma salvaguarda de Destreza {@dc 13} ou receberá o mesmo dano e será derrubada {@condition prone}. Uma criatura {@condition blind} dessa forma poderá repetir sua salvaguarda no final de cada um dos seus turnos, terminando a condição em caso de sucesso.",
+						"Caso seja bem sucedida na salvaguarda inicial, o alvo recebe metade do dano telúrico, não é arremessada nem será derrubada  {@condition prone} nem estará {@condition blind}."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"uniqueId": "034a12a5-00cb-4324-b4d9-511917072fd9",
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			}
+		},
+		{
+			"name": "Mirmidão Para-elemental da Areia",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"M"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB|plate}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"special": "Eólico, Telúrico"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"Auran",
+				"Terran. Se criado",
+				"um idioma à escolha do criador"
+			],
+			"cr": "7",
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"O mirmidão faz quatro ataques com seu chicote."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, alcance 5 ft., um alvo. {@h}8 ({@damage 1d6 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Tufão Arenoso  {@recharge}",
+					"entries": [
+						"O mirmidão faz um ataque com a cimitarra. Em um acerto, o alvo recebe 9 ({@damage 2d8}) pontos de dano telúrico e 9 ({@damage 2d8}) pontos de dano  eólico, e o alvo deve passar numa salvaguarda de Constituição {@dc 13} ou estará {@condition blind} até o fim do próximo turno do mirmidão."
+					]
+				}
+			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"uniqueId": "ed6dc3c8-06a5-4103-b84c-413e2fc91e3e",
+			"environment": [
+				"coastal",
+				"desert"
+			],
+			"token": {
+				"name": "",
+				"source": ""
+			},
+			"damageTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Formiga Gigante Trabalhadora",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 3,
+			"wis": 9,
+			"cha": 3,
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"passive": 9,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Táticas de Matilha",
+					"entries": [
+						"A trabalhadora tem vantagem em uma jogada de ataque contra uma criatura se ao menos um dos seus aliados estiver a 5 pés da criatura e se o aliado não estiver {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Cortadeira",
+					"entries": [
+						"A trabalhadora causa dano dobrado contra criaturas do tipo planta e estruturas ou objetos de madeira."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"A trabalhadora faz dois ataques com suas mandíbulas."
+					]
+				},
+				{
+					"name": "Mandíbula",
+					"entries": [
+						"{@atk mw} {@hit 8} para acertar, alcance 5 ft., um alvo. {@h}20 ({@damage 3d10 + 5}) pontos de dano cortante e o alvo está  {@condition grappled} (escape {@dc 18}). A trabalhadora possui somente uma mandíbula que só pode agarrar um alvo. A trabalhadora só pode agarrar um alvo dessa forma."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Camouflage",
+				"Pack Tactics",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"uniqueId": "c36d340e-7464-4ed0-a737-24a20249e28c",
+			"save": {
+				"str": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+8"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"environment": [
+				"desert",
+				"forest",
+				"underdark"
+			]
+		},
+		{
+			"name": "Formiga Gigante Guerreira",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "14d12 + 70"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 3,
+			"wis": 9,
+			"cha": 3,
+			"skill": {
+				"athletics": "+8"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 9,
+			"cr": "8",
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"A guerreira faz dois ataques com suas mandíbulas."
+					]
+				},
+				{
+					"name": "Mandíbula",
+					"entries": [
+						"{@atk mw} {@hit 9} para acertar, alcance 5 ft., um alvo. {@h}27 ({@damage 4d10 + 5}) pontos de dano cortante."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"uniqueId": "0813ef39-a264-4a99-88af-cfed5adced70",
+			"trait": [
+				{
+					"name": "Táticas de Matilha",
+					"entries": [
+						"A guerreira tem vantagem em uma jogada de ataque contra uma criatura se ao menos um dos seus aliados estiver a 5 pés da criatura e se o aliado não estiver {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Corpo Espinhoso",
+					"entries": [
+						"Uma criatura que toque a guerreira ou acerte-a com um ataque corpo-a-corpo enquanto a 5ft dela recebe 11 ({@dice 2d10}) pontos de dano perfurante."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"environment": [
+				"desert",
+				"forest",
+				"underdark"
+			]
+		},
+		{
+			"name": "Larva de Formiga Gigante",
+			"source": "Pergaminhos de Dalrion",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 15
+			},
+			"str": 13,
+			"dex": 8,
+			"con": 13,
+			"int": 2,
+			"wis": 8,
+			"cha": 2,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"languages": [
+				"understands Druidic but can't speak"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiataque",
+					"entries": [
+						"A larva faz dois ataques com sua mordida"
+					]
+				},
+				{
+					"name": "Mordida",
+					"entries": [
+						"{@atk mw} {@hit 3} para acertar, alcance 5 ft., uma criatura. {@h}7 ({@damage 1d10 + 2}) pontos de dano perfurante e o alvo precisa passar em uma salvaguarda de Constituição {@dc 11} ou estará envenenado {@condition poisoned} por um minuto. Enquanto {@condition poisoned} dessa forma, o alvo também está {@condition paralyzed}. O alvo pode repetir sua salvaguarda no fim de cada um dos seus turnos, terminando o efeito em si mesmo em caso de sucesso."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"DU"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Assassin Bug",
+				"source": "MFF"
+			},
+			"uniqueId": "725a8568-90f8-473f-980a-d847c2e5806f",
+			"resist": [
+				"bludgeoning"
+			],
+			"trait": [
+				{
+					"name": "Táticas de Matilha",
+					"entries": [
+						"A larva tem vantagem em uma jogada de ataque contra uma criatura se ao menos um dos seus aliados estiver a 5 pés da criatura e se o aliado não estiver  {@condition incapacitated}.."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"underdark"
+			]
 		}
 	],
 	"legendaryGroup": [],
