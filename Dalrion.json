@@ -5,14 +5,11 @@
 				"json": "Pergaminhos de Dalrion",
 				"abbreviation": "PdD",
 				"full": "Pergaminhos de Dalrion",
+				"version": "0.0.4",
 				"url": "https://github.com/PergaminhosDeDalrion/PdD.git",
-				"authors": [
-					"Tiago Frossard"
-				],
+				"authors": ["Tiago Frossard"],
 				"color": "e7871d",
-				"convertedBy": [
-					"Tiago Frossard"
-				]
+				"convertedBy": ["Tiago Frossard"]
 			}
 		]
 	},
